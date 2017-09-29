@@ -31,6 +31,13 @@ const dirTree = require('directory-tree');
 const filteredTree = dirTree('/some/path', {exclude:/some_path_to_exclude/});
 ```
 
+You can also include only directories from the tree by isDirOnly option.
+
+```js
+const dirTree = require('directory-tree');
+const filteredTree = dirTree('/some/path', {isDirOnly:true});
+```
+
 A callback function can be executed with each file that matches the extensions provided:
 
 ```js
